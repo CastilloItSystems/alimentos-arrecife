@@ -1,16 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden hero-bg">
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <img
-          src="https://images.pexels.com/photos/3274903/pexels-photo-3274903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="Vista aérea de aguas turquesas del caribe"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/35"></div>
       </div>
       <motion.div
         className="relative z-10 px-4"
@@ -22,11 +17,12 @@ const Hero = () => {
           Alimentos Arrecife
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-100 mb-10 drop-shadow-md">
-          Descubra la pureza en nuestras líneas de sal, la frescura en nuestros atunes y el aroma en nuestras infusiones.
+          Descubra la pureza en nuestras líneas de sal, la frescura en nuestros
+          atunes y el aroma en nuestras infusiones.
         </p>
         <motion.a
           href="#productos"
-          className="bg-sky-500 text-white font-bold py-3 px-10 rounded-full text-lg transition-all duration-300 hover:bg-sky-400 glow-button"
+          className="bg-accent text-white font-bold py-3 px-10 rounded-full text-lg transition-all duration-300 hover:opacity-90 btn-hover"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >

@@ -13,17 +13,17 @@ const AboutUs = () => {
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-800 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary mb-6 header-font">
               Llevando Calidad a la Mesa Venezolana
             </h2>
-            <p className="text-slate-600 mb-4 text-lg">
+            <p className="text-gray-600 mb-4 text-lg">
               Alimentos Arrecife es una empresa venezolana líder, dedicada a la
               producción y distribución de un diverso portafolio de alimentos.
               Desde nuestra estratégica ubicación en el estado Anzoátegui,
               garantizamos un suministro confiable y eficiente a todo el
               territorio nacional.
             </p>
-            <p className="text-slate-600 text-lg">
+            <p className="text-gray-600 text-lg">
               Nuestra misión es ser el socio confiable para el comercio y el
               hogar, ofreciendo productos que cumplen con los más estrictos
               estándares de calidad, impulsando el bienestar de nuestros

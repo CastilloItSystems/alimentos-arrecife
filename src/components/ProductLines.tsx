@@ -130,21 +130,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
       }}
     >
       <div>
-        <h3 className="font-serif text-3xl font-bold text-slate-800 mb-3">
+        <h3 className="font-serif text-3xl font-bold text-primary mb-3 header-font">
           {name}
         </h3>
-        <p className="text-slate-600 mb-5">{description}</p>
+        <p className="text-gray-600 mb-5">{description}</p>
 
-        <div className="h-px bg-slate-400/30 my-5"></div>
+        <div className="h-px bg-gray-400/30 my-5"></div>
 
-        <motion.ul variants={listVariants} className="space-y-3 text-slate-700">
+        <motion.ul variants={listVariants} className="space-y-3 text-gray-700">
           {subProducts.map((item) => (
             <motion.li
               key={item.name}
               variants={itemVariants}
               className="flex items-center gap-3"
             >
-              <span className="text-sky-600">{item.icon}</span>
+              <span className="text-secondary">{item.icon}</span>
               <span className="font-medium text-sm">{item.name}</span>
             </motion.li>
           ))}
@@ -153,7 +153,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="mt-8 text-center">
         <motion.button
           onClick={() => onOpenCatalog(catalog)}
-          className="bg-sky-500 text-white font-bold py-2 px-6 rounded-full text-base transition-all duration-300 hover:bg-sky-600 inline-flex items-center gap-2 glow-button"
+          className="bg-secondary text-white font-bold py-2 px-6 rounded-full text-base transition-all duration-300 hover:bg-secondary/80 inline-flex items-center gap-2 btn-hover"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
@@ -183,10 +183,10 @@ const ProductLines: React.FC<{ onOpenCatalog: (images: string[]) => void }> = ({
     >
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-0 px-4">
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-300 drop-shadow-md">
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary/30 drop-shadow-md header-font">
             Nuestras Líneas de Productos
           </h2>
-          <p className="text-slate-400 mt-2 drop-shadow-sm">
+          <p className="text-gray-400 mt-2 drop-shadow-sm">
             Tres pilares de calidad que definen a Alimentos Arrecife.
           </p>
         </div>

@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #004a77; /* Azul Marino Profundo */
+  --color-secondary: #00b4d8; /* Azul Cian Claro */
+  --color-accent: #ef4444; /* Rojo Coral/Tomate */
+  --color-text: #1f2937; /* Gris oscuro */
+  --color-bg: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-bg: #0a0a0a;
+    --color-text: #e6eef6;
   }
 }
 
+/* Base body styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  scroll-behavior: smooth;
+}
+
+/* Utility helpers (used alongside Tailwind) */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.border-primary {
+  border-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Hero background helper (gradient + image placeholder) */
+.hero-bg {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 74, 119, 0.9) 0%,
+      rgba(0, 180, 216, 0.7) 100%
+    ),
+    url("https://placehold.co/1920x1080/004A77/FFFFFF?text=Fondo+de+Mar+y+Cristales+de+Sal")
+      center center/cover no-repeat;
+}
+
+/* Header font helper used for logo */
+.header-font {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  font-weight: 800;
+}
+
+/* Small utility to mimic button hover from the provided design */
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 74, 119, 0.16);
 }

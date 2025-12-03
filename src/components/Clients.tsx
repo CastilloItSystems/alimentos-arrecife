@@ -13,12 +13,12 @@ const clientIndustries = [
 
 const Clients = () => {
   return (
-    <section id="clientes" className="py-20 sm:py-32 bg-sky-50">
+    <section id="clientes" className="py-20 sm:py-32 bg-secondary/10">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-800 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary mb-4 header-font">
           Con la Confianza de Líderes
         </h2>
-        <p className="max-w-2xl mx-auto text-slate-600 mb-16">
+        <p className="max-w-2xl mx-auto text-gray-600 mb-16">
           Proveemos alimentos de calidad a una diversa gama de clientes clave
           para el abastecimiento de Venezuela.
         </p>
@@ -37,13 +37,13 @@ const Clients = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`text-slate-500 text-lg md:text-xl font-medium tracking-wider ${client.style}`}
+                className={`text-gray-500 text-lg md:text-xl font-medium tracking-wider ${client.style}`}
               >
                 {client.name}
               </motion.div>
             ))}
           </div>
-          <div className="absolute -inset-x-10 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-sky-300 to-transparent opacity-50"></div>
+          <div className="absolute -inset-x-10 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-50"></div>
         </motion.div>
       </div>
     </section>

@@ -3,28 +3,26 @@
 import React from "react";
 
 const Footer: React.FC = () => (
-  <footer className="bg-slate-800 text-slate-300 py-16">
+  <footer className="bg-primary text-gray-100 py-16">
     <div className="container mx-auto px-4 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
       <div className="md:col-span-1">
-        <h4 className="font-serif font-bold text-2xl text-white mb-2">
+        <h4 className="font-serif font-bold text-2xl text-white mb-2 header-font">
           Arrecife
         </h4>
-        <p className="text-sm text-slate-400">
-          Calidad y sabor para Venezuela.
-        </p>
+        <p className="text-sm text-gray-200">Calidad y sabor para Venezuela.</p>
       </div>
       <div>
         <h4 className="font-bold text-lg text-white mb-4">Navegación</h4>
         <ul className="space-y-3 text-sm">
           <li>
-            <a href="#home" className="hover:text-sky-400 transition-colors">
+            <a href="#home" className="hover:text-secondary transition-colors">
               Inicio
             </a>
           </li>
           <li>
             <a
               href="#nosotros"
-              className="hover:text-sky-400 transition-colors"
+              className="hover:text-secondary transition-colors"
             >
               Nosotros
             </a>
@@ -32,7 +30,7 @@ const Footer: React.FC = () => (
           <li>
             <a
               href="#productos"
-              className="hover:text-sky-400 transition-colors"
+              className="hover:text-secondary transition-colors"
             >
               Productos
             </a>
@@ -40,7 +38,7 @@ const Footer: React.FC = () => (
           <li>
             <a
               href="#clientes"
-              className="hover:text-sky-400 transition-colors"
+              className="hover:text-secondary transition-colors"
             >
               Clientes
             </a>
@@ -48,7 +46,7 @@ const Footer: React.FC = () => (
           <li>
             <a
               href="#contacto"
-              className="hover:text-sky-400 transition-colors"
+              className="hover:text-secondary transition-colors"
             >
               Contacto
             </a>
@@ -59,12 +57,12 @@ const Footer: React.FC = () => (
         <h4 className="font-bold text-lg text-white mb-4">Legal</h4>
         <ul className="space-y-3 text-sm">
           <li>
-            <a href="#" className="hover:text-sky-400 transition-colors">
+            <a href="#" className="hover:text-secondary transition-colors">
               Términos y Condiciones
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-sky-400 transition-colors">
+            <a href="#" className="hover:text-secondary transition-colors">
               Política de Privacidad
             </a>
           </li>
@@ -76,20 +74,20 @@ const Footer: React.FC = () => (
           <p>Anzoátegui, Venezuela</p>
           <a
             href="tel:+584149872360"
-            className="block hover:text-sky-400 transition-colors"
+            className="block hover:text-secondary transition-colors"
           >
             Tel: +58 414-9872360
           </a>
           <a
             href="mailto:ventas@alimentosarrecife.com.ve"
-            className="block hover:text-sky-400 transition-colors"
+            className="block hover:text-secondary transition-colors"
           >
             ventas@alimentosarrecife.com.ve
           </a>
         </address>
       </div>
     </div>
-    <div className="container mx-auto px-4 mt-12 border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+    <div className="container mx-auto px-4 mt-12 border-t border-primary/30 pt-8 text-center text-sm text-gray-200">
       <p>
         &copy; {new Date().getFullYear()} Alimentos Arrecife. Todos los derechos
         reservados.

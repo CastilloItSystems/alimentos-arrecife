@@ -8,11 +8,11 @@ const LogisticsSection: React.FC = () => (
     <div className="container mx-auto px-4">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
-          <MapPin className="w-12 h-12 text-sky-500 mx-auto md:mx-0 mb-4" />
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-800 mb-4">
+          <MapPin className="w-12 h-12 text-secondary mx-auto md:mx-0 mb-4" />
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-primary mb-4 header-font">
             Logística Eficiente a Nivel Nacional
           </h2>
-          <p className="max-w-xl text-slate-600 mx-auto md:mx-0">
+          <p className="max-w-xl text-gray-600 mx-auto md:mx-0">
             Nuestra ubicación estratégica en Anzoátegui nos permite optimizar la
             distribución, garantizando entregas puntuales y seguras a cualquier
             rincón de Venezuela.

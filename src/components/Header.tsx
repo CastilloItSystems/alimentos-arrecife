@@ -28,8 +28,8 @@ const Header = () => {
     open: { opacity: 1, y: "0" },
   };
 
-  const navTextColor = isScrolled ? "text-slate-700" : "text-white";
-  const logoColor = isScrolled ? "text-slate-800" : "text-white";
+  const navTextColor = isScrolled ? "text-primary" : "text-white";
+  const logoColor = isScrolled ? "text-primary" : "text-white";
 
   return (
     <>
@@ -53,7 +53,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`font-medium hover:text-sky-500 transition-colors duration-300 ${navTextColor}`}
+                  className={`font-medium hover:text-secondary transition-colors duration-300 ${navTextColor}`}
                 >
                   {link.name}
                 </a>
@@ -84,7 +84,7 @@ const Header = () => {
               <div className="flex justify-between items-center h-20">
                 <a
                   href="#home"
-                  className="font-serif text-3xl font-bold text-slate-800"
+                  className="font-serif text-3xl font-bold text-primary header-font"
                   onClick={() => setIsOpen(false)}
                 >
                   Arrecife
@@ -101,7 +101,7 @@ const Header = () => {
                   <a
                     key={link.name}
                     href={link.href}
-                    className="text-3xl font-bold text-slate-700 hover:text-sky-500 transition-colors"
+                    className="text-3xl font-bold text-primary hover:text-secondary transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
